@@ -1,0 +1,721 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--bgc-main);
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+/* UTILITIES */
+
+:root{
+
+    --bgc-main: #141922;
+    --bcg-sidebar: #000000;
+    --bcg-footer: #282828;
+    --white: #fff;
+    --grey: #77797e;
+}
+
+
+/*  */
+/* HEADER */
+/*  */
+
+.web-app{
+    height: 100vh;
+    overflow: hidden;
+}
+
+.web-app-top{
+    height: calc(100% - 70px);
+    display: flex;
+}
+
+header{
+    background-color: rgba(8, 11, 18, 0.7);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 20px;
+    position: fixed;
+    left: 40px;
+    top: 0;
+    right: 0;
+    z-index: 1;
+
+}
+
+
+
+header div a{
+    color: var(--white);
+    text-transform: uppercase;
+    border-radius: 20px;
+    padding: 10px 30px;
+    border: 1px solid var(--white);
+    text-decoration: none;
+    font-size: 12px;
+}
+
+header div a:hover{
+    font-size: 14px;
+}
+
+/*  */
+/* SIDEBAR */
+/*  */
+
+.sidebar{
+    height: 100%;
+    width: 40px;
+    background-color:var(--bcg-sidebar);
+    overflow: hidden;
+    padding: 5px 7px 20px;
+}
+
+.sidebar > div:first-child{
+    height: calc(100% - 90px);
+    overflow: hidden;
+    min-height: 300px;
+}
+.sidebar .logos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.sidebar .logos div:nth-child(2) figure img,
+.sidebar .logos div:nth-child(3) figure img,
+.sidebar .logos div:nth-child(4) figure img{
+    opacity: 0.7;
+}
+
+.sidebar .logos div:hover figure img{
+    opacity: 1;
+}
+
+
+
+.sidebar .logos div:first-child figure img:last-child{
+    display: none;
+}
+
+.sidebar > div span{
+    display: none;
+}
+
+
+.sidebar .download-profile{
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 7px;
+}
+
+.sidebar .download-profile div:first-child img{
+    width: 15px;
+}
+
+.sidebar .download-profile div:last-child img{
+    background-color: var(--grey);
+    border-radius: 50%;
+    aspect-ratio: 1;
+}
+
+.sidebar .download-profile .line{
+    display: none;
+    border: 1px solid var(--grey);
+    width: 100%;
+}
+
+.sidebar .playlist{
+    display: none;
+    
+}
+
+/*  */
+/* MAIN */
+/*  */
+
+main{
+    background-color: var(--bgc-main);
+    width: calc(100% - 40px);
+    padding: 30px;
+    overflow: auto;
+
+}
+
+/* nav */
+
+main nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    row-gap: 40px;
+    margin-bottom: 40px;
+    padding-top: 70px;
+}
+
+main nav h3{
+    color: var(--grey);
+    text-transform: uppercase;
+    font-size: 14px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid var(--bgc-main);
+}
+
+main nav h3:hover{
+    color: var(--white);
+    border-bottom: 3px solid #adff2f;
+    cursor: pointer;
+    
+}
+
+/* Recently played */
+
+main .recently-played h2{
+    color: var(--white);
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+main .recently-played > div{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+main .recently-played > div div{
+    width: calc((100% / 2) - 10px / 2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main .recently-played > div div h3{
+    color: var(--white);
+    text-transform: capitalize;
+}
+
+main .recently-played > div div span{
+    color: var(--grey);
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+main .recently-played > div div figure {
+    position: relative;
+}
+
+main .recently-played > div div figure i{
+    display: none;   
+}
+
+main .recently-played > div div figure:hover i{
+    display: block;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+    font-size: 40px;   
+}
+
+main .recently-played > div div figure:hover img {
+    opacity: 0.5;
+}
+
+
+
+
+/* create for john doe */
+
+main .create{
+    margin-block: 40px;
+}
+
+main .create h2{
+    color: var(--white);
+    margin-bottom: 5px;
+    font-size: 28px;
+}
+
+main .create span{
+    color: var(--grey);
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+
+main .create > div{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+main .create > div div{
+    width: calc((100% / 2) - 10px / 2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main .create > div div h3{
+    color: var(--white);
+    text-transform: capitalize;
+}
+
+main .create > div div figure {
+    position: relative;
+}
+
+main .create > div div figure i{
+    display: none;   
+}
+
+main .create > div div figure:hover i{
+    display: block;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+    font-size: 40px;   
+}
+
+main .create > div div figure:hover img {
+    opacity: 0.5;
+}
+
+/* popular artists */
+
+main .popular-artist h2{
+    color: var(--white);
+    margin-bottom: 5px;
+    font-size: 28px;
+}
+
+main .popular-artist span{
+    color: var(--grey);
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+
+main .popular-artist > div{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+main .popular-artist > div div{
+    width: calc((100% / 2) - 10px / 2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main .popular-artist > div div figure img{
+    border-radius: 50%;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+main .popular-artist > div div h3{
+    color: var(--white);
+    text-transform: capitalize;
+}
+
+main .popular-artist > div div figure {
+    position: relative;
+}
+
+main .popular-artist > div div figure i{
+    display: none;   
+}
+
+
+main .popular-artist > div div figure:hover i{
+    display: block;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+    font-size: 40px;   
+}
+
+main .popular-artist > div div figure:hover img {
+    opacity: 0.5;
+}
+
+
+
+
+/* FOOTER */
+
+footer{
+    height: 70px;
+    background-color: #282828;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+}
+
+footer .left-bar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 40%;
+}
+
+footer .left-bar figure{
+    aspect-ratio: 1;
+    width: 50px;
+}
+
+footer .left-bar div h5{
+    color: var(--white);
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+footer .left-bar div span{
+    color: var(--grey);
+    font-size: 10px;
+}
+
+footer .left-bar div span:hover{
+    color: var(--white);
+    text-decoration: underline;
+}
+
+footer .left-bar div:nth-child(3){
+    margin-left: 30px;
+}
+
+footer .left-bar div i{
+    color: var(--grey);
+    margin-right: 10px;
+    display: none;
+}
+
+footer .center-bar{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+footer .center-bar div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+footer .center-bar div:first-child i{
+    color: var(--white);
+    font-size: 25px;
+}
+
+footer .center-bar div:first-child i.fa-circle-play:hover{
+    font-size: 30px;
+}
+
+footer .center-bar div:last-child span{
+    color: var(--white);  
+    font-size: 12px;
+}
+
+footer .center-bar div:last-child div{
+    width: 100%; 
+}
+
+input {
+    height: 4px;
+    width: 100%;
+    margin: 2px;
+    border-radius: 8px;
+    transition: 0.2s ease;
+    appearance: none;
+    background-color:  #5e5e5e;
+}
+
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color:var(--white);
+}
+
+input[type="range"]:hover {
+    background: #adff2f;
+}
+
+footer .right-bar{
+    
+    display: none;
+}
+
+footer .right-bar i{
+    color: var(--white);
+}
+
+
+
+
+
+
+
+/*  */
+/* MEDIA QUERIES */
+/*  */
+
+/* TABLET SMALL */
+
+@media screen and (min-width: 576px){
+    header{
+        left: 200px;
+    }
+
+    main{
+        width: calc(100% - 200px);
+    }
+
+    .sidebar{
+        width: 200px;
+        padding: 10px 0;
+    }
+    .sidebar .logos > div{
+        display: flex;
+        gap:5px;
+        padding-inline: 15px;
+    }
+
+    .sidebar img{
+        width: 20px;
+    }
+
+
+    .sidebar .logos div:first-child figure img:last-child{
+        display: block;
+        width: 120px;
+        margin-bottom: 20px;
+    }
+
+    .sidebar .logos div:first-child figure img:first-child{
+        display: none;
+    }
+
+    .sidebar > div span{
+        display: inline;
+        color: var(--grey);
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+    .sidebar > div span:hover{
+        color: var(--white);
+        cursor: pointer;
+    }
+
+    .sidebar > div .logos div:hover span{
+        color: var(--white);
+    }
+
+    .sidebar .logos div:nth-child(2):hover,
+    .sidebar .logos div:nth-child(3):hover,
+    .sidebar .logos div:nth-child(4):hover {
+        border-left: 3px solid #adff2f;
+        cursor: pointer;
+    }
+    .sidebar .logos,
+    .sidebar .download-profile{
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .sidebar .playlist {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        max-height: 80%;
+        overflow: auto;
+        padding: 15px;
+    }
+
+    .sidebar .playlist h4{
+        color: var(--white);
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+
+    .sidebar .playlist ul{
+        text-transform: capitalize;
+        list-style-type: none;
+        color: var(--grey);
+        overflow: auto;
+    }
+
+    .sidebar .playlist ul li:hover{
+        color: var(--white);
+        cursor: pointer;
+        
+    }
+
+    .sidebar .playlist ul li{
+        margin-block: 10px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .sidebar .playlist > div{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin-top: 10px;
+        
+    }
+
+    .sidebar .playlist > div div{
+        background-color: var(--grey);
+        padding: 10px;
+        width: 30px;
+        height: 30px;
+        position: relative;
+    }
+
+    .sidebar .playlist > div:hover div{
+        background-color: var(--white);
+        cursor: pointer;
+    }
+
+    .sidebar .playlist > div div span{
+        color: #000000;
+        font-size: 30px;
+        font-weight: bold;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .sidebar .playlist > div > span{
+        color: var(--grey);
+        text-decoration: none;
+        font-size: 12px;
+        text-transform: capitalize;
+
+    }
+
+    .sidebar .playlist > div:hover > span{
+        color: var(--white);
+        cursor: pointer;
+    }
+
+
+    .sidebar .download-profile{
+        padding: 15px;
+    }
+
+    .sidebar .download-profile div{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .sidebar .download-profile .line{
+        display: block;
+        border: 1px solid var(--grey);
+        width: 100%;
+    }
+
+
+
+
+}
+
+
+/* TABLET */
+
+@media screen and (min-width: 768px){
+    main .recently-played > div div{
+        width: calc((100% / 4) - (30px / 4));
+
+    }
+
+    main .create > div div{
+        width: calc((100% / 4) - (30px / 4));
+
+    }
+
+    main .popular-artist > div div{
+        width: calc((100% / 4) - (30px / 4));
+
+    }
+
+    footer .left-bar{
+        width: auto;
+    }
+    
+    footer .left-bar div i{
+        display:inline-block;
+    }
+    footer .left-bar div i:hover{
+        color: var(--white);
+    }
+
+    footer .center-bar{
+        width: 40%;
+    }
+    
+    footer .right-bar{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 992px){
+    main .recently-played > div div{
+        width: calc((100% / 6) - (50px / 6));
+
+    }
+
+    main .create > div div{
+        width: calc((100% / 6) - (50px / 6));
+
+    }
+
+    main .popular-artist > div div{
+        width: calc((100% / 6) - (50px / 6));
+
+    }
+}
+
