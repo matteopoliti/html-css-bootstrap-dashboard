@@ -3,9 +3,12 @@
     overflow-x: hidden;
 }
 
+
+
 .navbar{
     height: 80px;
 }
+
 header nav form.d-flex{
     flex-grow: 1;
     justify-content: center;
@@ -16,6 +19,7 @@ header nav form.d-flex{
     background-color: #e5e5e5;
     height: 50px;
 }
+
 
 .sidebar{
     width: 60px;
@@ -36,9 +40,13 @@ header nav form.d-flex{
 main{
     height: calc(100vh - 80px);
     display: flex;
-    flex: wrap;
     width: 100%;
 }
+
+.offcanvas.offcanvas-end{
+    width: 100%;
+}
+
 .row > div{
     height: 200px;
     background-color: red;
@@ -55,4 +63,11 @@ main{
     width: calc(100% - 60px);
     overflow-y: auto;
     overflow-x: auto ;
+}
+
+@media screen and (min-width: 992px){
+    .offcanvas.offcanvas-end{
+        width: var(--bs-offcanvas-width);
+    }
+    
 }
