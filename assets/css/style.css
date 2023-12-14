@@ -1,6 +1,6 @@
 .web-app{
     height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .navbar{
@@ -15,4 +15,44 @@ header nav form.d-flex{
     width: 90%;
     background-color: #e5e5e5;
     height: 50px;
+}
+
+.sidebar{
+    width: 60px;
+    background-image: url(../img/sidebar-bg.png);
+    background-color: #051e34;
+    overflow: hidden;
+    
+}
+
+.sidebar .logos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+main{
+    height: calc(100vh - 80px);
+    display: flex;
+    flex: wrap;
+    width: 100%;
+}
+.row > div{
+    height: 200px;
+    background-color: red;
+    border: 1px solid green;
+}
+
+.row > div:nth-child(4){
+    height: 400px;
+    background-color: red;
+    border: 1px solid green;
+}
+
+.dashboard{
+    width: calc(100% - 60px);
+    overflow-y: auto;
+    overflow-x: auto ;
 }
