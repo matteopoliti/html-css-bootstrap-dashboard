@@ -16,26 +16,49 @@
     </head>
     <body>
         
-        <div class="web-app">
+        <div class="web-app bg-secondary-subtle">
 
             <header>
-                <nav class="navbar bg-body-tertiary">
+                <nav class="navbar bg-white flex-nowrap">
                     <div class="container-fluid bg-white">
+
                         <a class="navbar-brand" href="#">
                             <img src="./assets/img/mobile-logo.png" alt="mobile logo" class="img-fluid d-lg-none" width="50" height="50">
                             <img src="./assets/img/logo.svg" alt="logo" class="img-fluid d-none d-lg-block" width="150" height="50">
                         </a>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
+
+                        <form class="d-flex bg-secondary-subtle w-100 rounded" role="search">
+                            <div class="input-group">
+                                <span class="input-group-text bg-secondary-subtle" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                <input class="form-control bg-secondary-subtle" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
+                            </div>
                         </form>
                       
-                        <div class="d-lg-flex align-items-center gap-3">
-                            <i class="fa-solid fa-list-ul d-none d-lg-block"></i>
-                            <i class="fa-solid fa-circle-question d-none d-lg-block"></i>
-                            <i class="fa-solid fa-ellipsis-vertical d-none d-lg-block"></i>
-                            <i class="fa-solid fa-bell text-warning"></i>
-                            
-                        </div>
+
+                        <ul class="nav flex-nowrap align-items-center mb-lg-0">
+                            <li class="nav-item d-none d-lg-block">
+                              <a class="nav-link text-secondary active" aria-current="page" href="#"><i class="fa-solid fa-list-ul"></i></a>
+                            </li>
+
+                            <li class="nav-item d-none d-lg-block">
+                              <a class="nav-link text-secondary" href="#"><i class="fa-solid fa-circle-question"></i></a>
+                            </li>
+
+                            <li class="nav-item d-none d-lg-block">
+                              <a class="nav-link text-secondary disabled" aria-disabled="true"> <i class="fa-solid fa-ellipsis-vertical"></i></a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                              <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"  aria-expanded="false">
+                                <i class="fa-solid fa-bell text-warning"></i>
+                              </a>
+                              <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">Profilo</a></li>
+                                <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                              </ul>
+                            </li>
+                          </ul>
                     </div>
                 </nav>
                   
@@ -45,46 +68,48 @@
             
             
             <main>
-                <div class="sidebar p-3 d-flex flex-column justify-content-between">
-                    <div>
-                
-                        <div class="logos d-flex flex-column justify-content-center align-items-center gap-2 text-light">
-                            <div>
+                <div class="d-flex flex-column flex-shrink-0 bg-body-tertiary sidebar bg-primary-subtle" data-bs-theme="dark">
+                    <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link py-3 rounded-0 text-light d-flex align-items-center gap-2" aria-current="page" data-bs-placement="right" aria-label="Home" data-bs-original-title="Home">
                                 <i class="fa-solid fa-house"></i>
-                                <span class="d-none d-lg-block">Home</span>                
-                            </div>
-        
-                            <div>
-                                <i class="fa-solid fa-square-poll-vertical"></i>
-                                <span class="d-none d-lg-block">Stats</span>            
-                            </div>
-        
-                            <div>
+                                <span class="text-capitalize d-none d-lg-block">home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link py-3 rounded-0 text-light d-flex align-items-center gap-2" data-bs-placement="right" aria-label="Dashboard" data-bs-original-title="Dashboard">
+                                <i class="fa-solid fa-chart-simple"></i>
+                                <span class="text-capitalize d-none d-lg-block">stats</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link py-3 rounded-0 text-light d-flex align-items-center gap-2" data-bs-placement="right" aria-label="Orders" data-bs-original-title="Orders">
                                 <i class="fa-solid fa-signal"></i>
-                                <span class="d-none d-lg-block">Signal</span>            
-                            </div>
-                        </div>
-        
-                    </div>
-        
-                    <div class="settings d-flex flex-column justify-content-center align-items-center text-light">
-                        <div>
-                            <i class="fa-solid fa-gear"></i>
-                            <span  class="d-none d-lg-block">Admin</span>
-                        </div>
-                    </div>
-                </div>
+                                <span class="text-capitalize d-none d-lg-block">signals</span>
+                            </a>
+                        </li>
+                    </ul>
 
-                <div class="dashboard mx-auto px-4">
-
+                    
                     <div>
-                        <div>
-                            <span></span>
-                            <div></div>
+                        <a href="#" class="d-flex gap-2 align-items-center justify-content-center p-3 text-decoration-none text-light">
+                            <i class="fa-solid fa-gear"></i>
+                            <span class="text-capitalize d-none d-lg-block">admin</span>
+                        </a>
+                        
+                    </div>
+                  </div>
+
+                <div class="dashboard overflow-auto w-100 mx-auto">
+
+                    <div  class="bg-primary text-light p-3">
+                        <div class="d-flex gap-2 align-items-center">
+                            <span class="text-capitalize">nuovo studente</span>
+                            <i class="fa-regular fa-square-plus fs-1"></i>
                         </div>
     
                         <div>
-                            <h1></h1>
+                            <h1>Boolean</h1>
                         </div>
     
                         <div>
@@ -120,9 +145,6 @@
 
 
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-            const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-            const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
-        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </body>
 </html>

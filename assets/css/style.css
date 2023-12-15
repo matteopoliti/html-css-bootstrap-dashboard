@@ -9,39 +9,24 @@
     height: 80px;
 }
 
-header nav form.d-flex{
-    flex-grow: 1;
-    justify-content: center;
-}
-
-.form-control{
-    width: 90%;
-    background-color: #e5e5e5;
-    height: 50px;
-}
-
-
-.sidebar{
-    width: 60px;
-    background-image: url(../img/sidebar-bg.png);
-    background-color: #051e34;
-    overflow: hidden;
-    
-}
-
-.sidebar .logos{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 7px;
-}
 
 main{
     height: calc(100vh - 80px);
     display: flex;
     width: 100%;
 }
+
+.sidebar{
+    background-image: url(../img/sidebar-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    width: fit-content;
+}
+
+
+
 
 .offcanvas.offcanvas-end{
     width: 100%;
@@ -57,12 +42,6 @@ main{
     height: 400px;
     background-color: red;
     border: 1px solid green;
-}
-
-.dashboard{
-    width: calc(100% - 60px);
-    overflow-y: auto;
-    overflow-x: auto ;
 }
 
 @media screen and (min-width: 992px){
