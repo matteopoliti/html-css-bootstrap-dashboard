@@ -102,23 +102,54 @@
 
                 <div class="dashboard overflow-auto w-100 mx-auto">
 
-                    <div  class="bg-primary text-light p-3">
-                        <div class="d-flex gap-2 align-items-center">
+                    <div  class="bg-primary text-light p-3 d-flex flex-column gap-4 flex-lg-row justify-content-lg-between">
+                        <div class="d-flex gap-2 align-items-center order-lg-3">
                             <span class="text-capitalize">nuovo studente</span>
-                            <i class="fa-regular fa-square-plus fs-1"></i>
+                            <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" class="text-decoration-none">
+                               <div class="border border-light rounded p-3 position-relative "> <span class="text-light position-absolute top-50 start-50 translate-middle"><i class="fa-solid fa-plus"></i></span></div>
+                            </a>
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Inserisci un nuovo studente </h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <form action="" class="row">
+                                        <div class="mb-3 col-6">
+                                            <label for="textName" class="form-label">Nome</label>
+                                            <input type="text" id="textName" class="form-control col-6">
+                                        </div>
+                                        <div class="mb-3 col-6">
+                                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1">
+                                          </div>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
     
-                        <div>
-                            <h1>Boolean</h1>
+                        <div class="order-lg-1">
+                            <div class="d-flex gap-2 justify-content-start align-items-center">
+                                <h1>Boolean</h1>
+                                <span class="badge rounded-pill bg-dark bg-opacity-25">Piano blaze</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="badge rounded-pill bg-dark bg-opacity-25">3 app</span>
+                                <span class=""><i class="fa-solid fa-angles-right"></i></span>
+                                <span class="badge rounded-pill bg-dark bg-opacity-25 d-lg-none"><i class="fa-solid fa-ellipsis"></i></span>
+                                <span class="badge rounded-pill bg-dark bg-opacity-25 d-none d-lg-block">Boolean mobile app</span>
+                                <span class="badge rounded-pill bg-dark bg-opacity-25 d-none d-lg-block">Boolean web app</span>
+                                <span class="badge rounded-pill bg-dark bg-opacity-25 d-none d-lg-block">Boolean blog app</span>
+                            </div>
                         </div>
     
-                        <div>
-                            <p></p>
-                            <span></span>
+                        <div class="order-lg-2">
+                            <p class="text-light m-0">Studenti online negli ultimi 30 minuti</p>
+                            <span class="fs-2 mt-2">125</span>
                         </div>
                     </div>
     
-                    <div class="row">
+                    <div class="row box">
                         <div class="col-11 col-lg-7 m-2 order-lg-1">
     
                         </div>
