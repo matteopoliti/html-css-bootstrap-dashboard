@@ -115,14 +115,87 @@
                                 </div>
                                 <div class="offcanvas-body">
                                     <form action="" class="row">
-                                        <div class="mb-3 col-6">
+                                        <div class="mb-3 col-12 col-lg-6">
                                             <label for="textName" class="form-label">Nome</label>
-                                            <input type="text" id="textName" class="form-control col-6">
+                                            <input type="text" id="textName" class="form-control">
                                         </div>
-                                        <div class="mb-3 col-6">
+
+                                        <div class="mb-3 col-12 col-lg-6">
+                                            <label for="textSurname" class="form-label">Cognome</label>
+                                            <input type="text" id="textSurname" class="form-control">
+                                        </div>
+
+                                        <div class="mb-3 col-12 col-lg-6">
+                                            <label for="basic-addon1" class="form-label">Email</label>
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text" id="basic-addon1">@</span>
+                                                <input type="text" id="textEmail" class="form-control"  aria-label="Username" aria-describedby="basic-addon1">
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3 col-12 col-lg-6">
                                             <label for="exampleInputPassword1" class="form-label">Password</label>
                                             <input type="password" class="form-control" id="exampleInputPassword1">
-                                          </div>
+                                        </div>
+
+                                        <div class="mb-3 col-12 col-lg-6">
+                                            <label for="basic-addon2" class="form-label">Indirizzo Email</label>
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text" id="basic-addon2">@</span>
+                                                <input type="text" class="form-control"  aria-label="Username" aria-describedby="basic-addon1">
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3 col-12 col-lg-6">
+                                            <label for="exampleInputPassword2" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword2">
+                                        </div>
+
+                                        <div class="mb-3 col-12">
+                                            <label for="textAddress" class="form-label">Indirizzo</label>
+                                            <input type="text" id="textAddress" class="form-control">
+                                        </div>
+
+                                        <div class="mb-3 col-12 col-lg-6">
+                                            <label for="textCity" class="form-label">Città</label>
+                                            <input type="text" id="textCity" class="form-control">
+                                        </div>
+
+                                        <div class="mb-3 col-12 col-lg-4">
+                                            <label for="selectNations" class="form-label">Stato</label>
+                                            <select class="form-select" id="selectNations" aria-label="Default select example">
+                                                <option selected>Scegli...</option>
+                                                <option value="1">Italia</option>
+                                                <option value="2">Francia</option>
+                                                <option value="3">Germania</option>
+                                                <option value="4">Spagna</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="mb-3 col-12 col-lg-2">
+                                            <label for="capNumber" class="form-label">Cap</label>
+                                            <input type="Number" id="capNumber" class="form-control">
+                                        </div>
+
+                                        <div class="mb-3 col-12">
+                                            <label for="formFile" class="form-label">Foto</label>
+                                            <input class="form-control" type="file" id="formFile">
+                                        </div>
+
+                                        <div class="mb-3 form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                              Seleziona per proseguire
+                                            </label>
+                                        </div>
+
+                                        <div class="col-auto">
+                                            <button type="submit" class="btn btn-primary mb-3">Salva</button>
+                                        </div>
+
+                                        <div class="col-auto">
+                                            <button type="submit" class="btn btn-warning mb-3">Svuota</button>
+                                        </div>
                                     </form>
                                 </div>
                             </div>
