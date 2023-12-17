@@ -42,21 +42,18 @@ main a:hover div{
     width: 100%;
 }
 
-table td i.fa-code{
-    color: white;
-    background-color: #f26551;
-    border-radius: 50%;
-    padding: 7px 5px;
+.list-group-item:first-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+main div ul li,
+main div ul li a,
+main div div > p{
+    font-size: 14px;
 }
 
-.box > div{
-    border: 1px solid green;
-}
 
-.box > div:nth-child(4){
-    
-    border: 1px solid green;
-}
+
 
 @media screen and (min-width: 992px){
     .offcanvas.offcanvas-end{
