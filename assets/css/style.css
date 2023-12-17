@@ -54,7 +54,7 @@ table td i.fa-code{
 }
 
 .box > div:nth-child(4){
-    height: 400px;
+    
     border: 1px solid green;
 }
 
