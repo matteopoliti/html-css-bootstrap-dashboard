@@ -25,9 +25,6 @@ main{
     width: fit-content;
 }
 
-
-
-
 main a:hover div span i{
     color: black;
 }
@@ -46,12 +43,17 @@ main a:hover div{
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
+
 main div ul li,
 main div ul li a,
 main div div > p{
     font-size: 14px;
 }
 
+main div ul li:hover .ms_bg-grey,
+main div a:hover.ms_bg-grey{
+    background-color: #B6B9BE;
+}
 
 
 

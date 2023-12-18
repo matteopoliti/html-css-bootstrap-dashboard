@@ -69,21 +69,21 @@
             
             <main>
                 <div class="d-flex flex-column flex-shrink-0 bg-body-tertiary sidebar bg-primary-subtle" data-bs-theme="dark">
-                    <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link py-3 rounded-0 text-light d-flex align-items-center gap-2" aria-current="page" data-bs-placement="right" aria-label="Home" data-bs-original-title="Home">
+                    <ul class="nav nav-pills nav-flush flex-column justify-content-center mb-auto text-center">
+                        <li class="nav-item p-2">
+                            <a href="#" class="nav-link rounded-0 text-light d-flex align-items-center gap-2 ms_bg-grey" aria-current="page" data-bs-placement="right" aria-label="Home" data-bs-original-title="Home">
                                 <i class="fa-solid fa-house"></i>
                                 <span class="text-capitalize d-none d-lg-block">home</span>
                             </a>
                         </li>
-                        <li>
-                            <a href="#" class="nav-link py-3 rounded-0 text-light d-flex align-items-center gap-2" data-bs-placement="right" aria-label="Dashboard" data-bs-original-title="Dashboard">
+                        <li class="nav-item p-2">
+                            <a href="#" class="nav-link rounded-0 text-light d-flex align-items-center gap-2 ms_bg-grey" data-bs-placement="right" aria-label="Dashboard" data-bs-original-title="Dashboard">
                                 <i class="fa-solid fa-chart-simple"></i>
                                 <span class="text-capitalize d-none d-lg-block">stats</span>
                             </a>
                         </li>
-                        <li>
-                            <a href="#" class="nav-link py-3 rounded-0 text-light d-flex align-items-center gap-2" data-bs-placement="right" aria-label="Orders" data-bs-original-title="Orders">
+                        <li class="nav-item p-2">
+                            <a href="#" class="nav-link rounded-0 text-light d-flex align-items-center gap-2 ms_bg-grey" data-bs-placement="right" aria-label="Orders" data-bs-original-title="Orders">
                                 <i class="fa-solid fa-signal"></i>
                                 <span class="text-capitalize d-none d-lg-block">signals</span>
                             </a>
@@ -91,8 +91,8 @@
                     </ul>
 
                     
-                    <div>
-                        <a href="#" class="d-flex gap-2 align-items-center justify-content-center p-3 text-decoration-none text-light">
+                    <div class="p-3">
+                        <a href="#" class="p-1 d-flex gap-2 align-items-center justify-content-center text-decoration-none text-light ms_bg-grey">
                             <i class="fa-solid fa-gear"></i>
                             <span class="text-capitalize d-none d-lg-block">admin</span>
                         </a>
@@ -102,8 +102,8 @@
 
                 <div class="dashboard overflow-auto w-100 mx-auto">
 
-                    <div  class="bg-primary text-light p-3 d-flex flex-column gap-4 flex-lg-row justify-content-lg-between">
-                        <div class="d-flex gap-2 align-items-center order-lg-3">
+                    <div  class="bg-primary text-light p-3 d-flex flex-column gap-4 flex-md-row justify-content-md-between align-items-md-start">
+                        <div class="d-flex gap-2 align-items-center order-md-3">
                             <span class="text-capitalize">nuovo studente</span>
                             <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" class="text-decoration-none">
                                <div class="border border-light rounded p-3 position-relative "> <span class="text-light position-absolute top-50 start-50 translate-middle"><i class="fa-solid fa-plus"></i></span></div>
@@ -201,7 +201,7 @@
                             </div>
                         </div>
     
-                        <div class="order-lg-1">
+                        <div class="order-md-1">
                             <div class="d-flex gap-2 justify-content-start align-items-center">
                                 <h1>Boolean</h1>
                                 <span class="badge rounded-pill bg-dark bg-opacity-25">Piano blaze</span>
@@ -216,7 +216,7 @@
                             </div>
                         </div>
     
-                        <div class="order-lg-2">
+                        <div class="order-md-2">
                             <p class="text-light m-0">Studenti online negli ultimi 30 minuti</p>
                             <span class="fs-2 mt-2">125</span>
                         </div>
@@ -226,10 +226,10 @@
                         <div class="col-12 col-lg-8">
                             <h3 class="p-2 m-0 border border-secondary-subtle rounded-top mt-4">Prossime classi</h3>
                             <div class="p-3 border border-top-0 border-secondary-subtle bg-white rounded-bottom">
-                                <table class="table">
+                                <table class="table table-hover text-center">
                                     <thead>
-                                      <tr >
-                                        <th scope="col" colspan="6" class="text-secondary-emphasis">Nome</th>
+                                      <tr>
+                                        <th scope="col" width="50%" class="text-secondary-emphasis text-start">Nome</th>
                                         <th scope="col" class="d-none d-md-table-cell text-secondary-emphasis">Data inizio</th>
                                         <th scope="col" class="d-none d-md-table-cell text-secondary-emphasis">ROI</th>
                                         <th scope="col" class="text-secondary-emphasis">Stato</th>
@@ -238,89 +238,81 @@
                                     </thead>
                                     <tbody>
                                       <tr>
-                                        <td colspan="6"><img src="./assets/img/class-avatar.jpg" class="img-fluid"
-                                            width="30" height="30" alt="code"> Classe 75</td>
+                                        <td class="text-start"><img src="./assets/img/class-avatar.jpg" class="img-fluid rounded-circle" width="30" height="30" alt="code"> Classe 75</td>
                                         <td class="d-none d-md-table-cell">15 Feb 2021</td>
                                         <td class="d-none d-md-table-cell">20%</td>
                                         <td><span class="badge text-bg-success">Done</span></td>
-                                        <td class="text-center">
+                                        <td>
                                             <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
                                             <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
                                         </td>
                                       </tr>
                                       <tr>
-                                        <td colspan="6"><img src="./assets/img/class-avatar.jpg" class="img-fluid"
-                                            width="30" height="30" alt="code"> Classe 76</td>
+                                        <td class="text-start"><img src="./assets/img/class-avatar.jpg" class="img-fluid rounded-circle" width="30" height="30" alt="code"> Classe 76</td>
                                         <td class="d-none d-md-table-cell">15 Feb 2021</td>
                                         <td class="d-none d-md-table-cell">20%</td>
                                         <td><span class="badge text-bg-success">Done</span></td>
-                                        <td class="text-center">
+                                        <td>
                                             <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
                                             <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
                                         </td>
                                       </tr>
                                       <tr>
-                                        <td colspan="6"><img src="./assets/img/class-avatar.jpg" class="img-fluid"
-                                            width="30" height="30" alt="code"> Classe 77</td>
+                                        <td class="text-start"><img src="./assets/img/class-avatar.jpg" class="img-fluid rounded-circle" width="30" height="30" alt="code"> Classe 77</td>
                                         <td class="d-none d-md-table-cell">15 Feb 2021</td>
                                         <td class="d-none d-md-table-cell">20%</td>
                                         <td><span class="badge text-bg-warning">Process</span></td>
-                                        <td  class="text-center">
+                                        <td>
                                             <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
                                             <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
                                         </td>
                                       </tr>
                                       <tr>
-                                        <td colspan="6"><img src="./assets/img/class-avatar.jpg" class="img-fluid"
-                                            width="30" height="30" alt="code"> Classe 78</td>
+                                        <td class="text-start"><img src="./assets/img/class-avatar.jpg" class="img-fluid rounded-circle" width="30" height="30" alt="code"> Classe 78</td>
                                         <td class="d-none d-md-table-cell">15 Feb 2021</td>
                                         <td class="d-none d-md-table-cell">20%</td>
                                         <td><span class="badge text-bg-success">Done</span></td>
-                                        <td class="text-center">
+                                        <td>
                                             <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
                                             <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
                                         </td>
                                       </tr>
                                       <tr>
-                                        <td colspan="6"><img src="./assets/img/class-avatar.jpg" class="img-fluid"
-                                            width="30" height="30" alt="code"> Classe 79</td>
+                                        <td class="text-start"><img src="./assets/img/class-avatar.jpg" class="img-fluid rounded-circle" width="30" height="30" alt="code"> Classe 79</td>
                                         <td class="d-none d-md-table-cell">15 Feb 2021</td>
                                         <td class="d-none d-md-table-cell">20%</td>
                                         <td><span class="badge text-bg-danger">Failed</span></td>
-                                        <td class="text-center">
+                                        <td>
                                             <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
                                             <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
                                         </td>
                                       </tr>
                                       <tr>
-                                        <td colspan="6"><img src="./assets/img/class-avatar.jpg" class="img-fluid"
-                                            width="30" height="30" alt="code"> Classe 80</td>
+                                        <td class="text-start"><img src="./assets/img/class-avatar.jpg" class="img-fluid rounded-circle" width="30" height="30" alt="code"> Classe 80</td>
                                         <td class="d-none d-md-table-cell">15 Feb 2021</td>
                                         <td class="d-none d-md-table-cell">20%</td>
                                         <td><span class="badge text-bg-success">Done</span></td>
-                                        <td class="text-center">
+                                        <td>
                                             <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
                                             <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
                                         </td>
                                       </tr>
                                       <tr>
-                                        <td colspan="6"><img src="./assets/img/class-avatar.jpg" class="img-fluid"
-                                            width="30" height="30" alt="code"> Classe 81</td>
+                                        <td class="text-start"><img src="./assets/img/class-avatar.jpg" class="img-fluid rounded-circle" width="30" height="30" alt="code"> Classe 81</td>
                                         <td class="d-none d-md-table-cell">15 Feb 2021</td>
                                         <td class="d-none d-md-table-cell">20%</td>
                                         <td><span class="badge text-bg-danger">Failed</span></td>
-                                        <td class="text-center">
+                                        <td>
                                             <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
                                             <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
                                         </td>
                                       </tr>
                                       <tr>
-                                        <td colspan="6"><img src="./assets/img/class-avatar.jpg" class="img-fluid"
-                                            width="30" height="30" alt="code"> Classe 82</td>
+                                        <td class="text-start"><img src="./assets/img/class-avatar.jpg" class="img-fluid rounded-circle" width="30" height="30" alt="code"> Classe 82</td>
                                         <td class="d-none d-md-table-cell">15 Feb 2021</td>
                                         <td class="d-none d-md-table-cell">20%</td>
                                         <td><span class="badge text-bg-success">Done</span></td>
-                                        <td class="text-center">
+                                        <td>
                                             <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
                                             <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
                                         </td>
